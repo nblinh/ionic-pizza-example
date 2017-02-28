@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Welcome</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="person">
+  <h3>Welcome {{ person.firstName + " " + person.lastName}}</h3>
+</div>
+<div *ngIf="!person">
+  <h3> Welcome Pizza Talk </h3>
+</div>
+<button ion-button secondary menuToggle>Toggle Menu</button>
+</ion-content>
+
+
+
+
+
+
